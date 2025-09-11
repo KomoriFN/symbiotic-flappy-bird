@@ -1,0 +1,265 @@
+.app {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.game-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #0d1b13 0%, #1c2b21 100%);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.game-area {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.bird {
+  position: absolute;
+  width: 60px;
+  height: 48px;
+  left: 80px;
+  background-image: url('/bird.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 10;
+  transition: transform 0.1s;
+  image-rendering: crisp-edges;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  border-radius: 0;
+  filter: brightness(1.1) contrast(1.1);
+}
+
+/* Анимация полета */
+@keyframes fly {
+  0% { transform: translateY(0px) rotate(0deg); }
+  25% { transform: translateY(-3px) rotate(-5deg); }
+  50% { transform: translateY(0px) rotate(0deg); }
+  75% { transform: translateY(3px) rotate(5deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+.bird {
+  animation: fly 0.6s ease-in-out infinite;
+}
+
+.bird.falling {
+  transform: rotate(45deg);
+  animation: none;
+}
+
+.bird.jumping {
+  transform: rotate(-25deg);
+}
+
+.pipe-container {
+  position: absolute;
+  width: 60px;
+}
+
+.pipe {
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(90deg, #2d5a3d 0%, #3a7350 100%);
+  border: 3px solid #1e3b29;
+  border-radius: 8px;
+}
+
+.pipe-top {
+  top: 0;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.pipe-bottom {
+  bottom: 0;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.ground {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  background: linear-gradient(90deg, #3a5c3a 0%, #2c462c 100%);
+  border-top: 3px solid #1e2e1e;
+}
+
+.start-screen, .game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: rgba(13, 27, 19, 0.95);
+  padding: 40px;
+  border-radius: 20px;
+  border: 2px solid #3a7350;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.logo-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #4caf50;
+}
+
+.logo h2 {
+  color: #e8f5e8;
+  margin: 0;
+  font-size: 2.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.start-screen p, .game-over p {
+  color: #c8e6c9;
+  margin: 15px 0 25px;
+  font-size: 1.2rem;
+}
+
+.start-button, .restart-button {
+  background: linear-gradient(135deg, #2d5a3d 0%, #3a7350 100%);
+  color: #e8f5e8;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid #4caf50;
+}
+
+.start-button:hover, .restart-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(76, 175, 80, 0.3);
+  background: linear-gradient(135deg, #3a7350 0%, #4caf50 100%);
+}
+
+.game-over h2 {
+  color: #e8f5e8;
+  margin: 0 0 15px;
+  font-size: 2.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.game-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: rgba(13, 27, 19, 0.8);
+  border-bottom: 2px solid #3a7350;
+  z-index: 100;
+}
+
+.game-header h1 {
+  margin: 0;
+  color: #e8f5e8;
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.score {
+  color: #e8f5e8;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background: rgba(76, 175, 80, 0.2);
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid #4caf50;
+}
+
+.game-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 15px;
+  background: rgba(13, 27, 19, 0.8);
+  border-top: 2px solid #3a7350;
+  z-index: 100;
+}
+
+.game-footer p {
+  color: #a5d6a7;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.game-footer a {
+  color: #a5d6a7;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.game-footer a:hover {
+  color: #4caf50;
+  text-decoration: underline;
+}
+
+.twitter-link {
+  cursor: pointer;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .game-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .score {
+    font-size: 1.2rem;
+    padding: 8px 16px;
+  }
+  
+  .logo-icon {
+    font-size: 2.5rem;
+  }
+  
+  .logo h2 {
+    font-size: 2rem;
+  }
+  
+  .start-screen p, .game-over p {
+    font-size: 1rem;
+  }
+  
+  .start-button, .restart-button {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+  
+  .game-over h2 {
+    font-size: 2rem;
+  }
+  
+  .bird {
+    width: 48px;
+    height: 38px;
+    left: 60px;
+  }
+}

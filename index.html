@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Meta tags для Symbiotic стиля -->
+    <meta name="description" content="SymbiFlappy - A fun flappy bird game inspired by symbiotic.fi" />
+    <meta name="keywords" content="flappy bird, game, symbiotic, crypto, react" />
+    <meta name="theme-color" content="#6366f1" />
+    
+    <!-- Шрифт Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <title>SymbioticFlappy - Flappy Bird Game</title>
+    
+    <!-- Open Graph мета-теги для соцсетей -->
+    <meta property="og:title" content="SymbiFlappy - Flappy Bird Game" />
+    <meta property="og:description" content="Play our fun flappy bird game inspired by symbiotic.fi" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourdomain.com" />
+    <!-- <meta property="og:image" content="https://yourdomain.com/og-image.png" /> -->
+    
+    <!-- Twitter Card мета-теги -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SymbiFlappy - Flappy Bird Game" />
+    <meta name="twitter:description" content="Play our fun flappy bird game inspired by symbiotic.fi" />
+    <!-- <meta name="twitter:image" content="https://yourdomain.com/twitter-image.png" /> -->
+    
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="/vite.svg" />
+    
+    <!-- Предзагрузка критических ресурсов -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    </noscript>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    
+    <!-- Скрипт для отслеживания загрузки шрифтов -->
+    <script>
+      // Оптимизация загрузки шрифтов
+      if ('fonts' in document) {
+        document.fonts.load('1em Inter').then(() => {
+          document.documentElement.classList.add('fonts-loaded');
+        });
+      }
+    </script>
+  </body>
+</html>
