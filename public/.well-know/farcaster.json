@@ -4,39 +4,27 @@
     "payload": "eyJkb21haW4iOiJhcHAuZXhvbXBsZS5jb20ifQ",
     "signature": "MHgxMQoZGU4ZGYuZDWuZTdmMGIXN2YxMTU2NDI1MjRmZTYUMUyZGU4ZGU1MMU0MThiYjU4ZjVmZmQxYjRjNDBiNGVIZTRhNDcwNmVmNjhlMzQ0ZGQ5MDBlYmNlMzVIGY5ZGQ0NzI1NWRmNzMuYzUxNjE40MwVjZDJJY2Y0MDFj"
   },
-  "frame": {
-    "version": "next",
-    "imageUrl": "",
-    "button": {
-      "title": "Play SymbiFlappy",
-      "action": {
-        "type": "launch_frame",
-        "name": "SymbioticFlappy Game",
-        "url": "https://symbiotic-flappy-bird.vercel.app",
-        "splashImageUrl": "https://symbiotic-flappy-bird.vercel.app/vite.svg",
-        "splashBackgroundColor": "#6366f1"
-      }
-    }
-  },
   "miniapp": {
     "version": "1",
     "name": "SymbioticFlappy",
-    "description": "A fun flappy bird game inspired by symbiotic.fi",
+    "homeUrl": "https://symbiotic-flappy-bird.vercel.app",
     "iconUrl": "https://symbiotic-flappy-bird.vercel.app/vite.svg",
-    "url": "https://symbiotic-flappy-bird.vercel.app",
     "splashImageUrl": "https://symbiotic-flappy-bird.vercel.app/vite.svg",
     "splashBackgroundColor": "#6366f1",
-    "subtitle": "Flappy Bird Game",
-    "screenshotUrl": [
-      "https://symbiotic-flappy-bird.vercel.app/screenshot.png"
-    ],
     "primaryCategory": "games",
     "tags": ["games", "flappy", "bird", "crypto"],
-    "heroImageUrl": "https://symbiotic-flappy-bird.vercel.app/vite.svg",
+    "noindex": false,
+    "subtitle": "Flappy Bird Game",
+    "description": "A fun flappy bird game inspired by symbiotic.fi",
     "tagline": "Play and earn",
-    "ogTitle": "SymbioticFlappy - Flappy Bird Game",
-    "ogDescription": "Play our fun flappy bird game inspired by symbiotic.fi",
-    "ogImageUrl": "https://symbiotic-flappy-bird.vercel.app/vite.svg",
-    "noindex": false
+    "heroImageUrl": "https://symbiotic-flappy-bird.vercel.app/vite.svg",
+    "screenshotUrls": [
+      "https://symbiotic-flappy-bird.vercel.app/vite.svg",
+      "https://symbiotic-flappy-bird.vercel.app/vite.svg",
+      "https://symbiotic-flappy-bird.vercel.app/vite.svg"
+    ],
+    "ogTitle": "SymbioticFlappy",
+    "ogDescription": "Flappy bird game on Base",
+    "ogImageUrl": "https://symbiotic-flappy-bird.vercel.app/vite.svg"
   }
 }
