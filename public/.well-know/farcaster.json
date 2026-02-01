@@ -1,8 +1,8 @@
 {
   "accountAssociation": {
-    "header": "",
-    "payload": "",
-    "signature": ""
+    "header": "eyJmaWQiOjkiXTIISnRcGUiOiIjdXkNb2R5IiwiZ2V5IjoxMlVmNzkwRGQ3OTkzQT1ZK4NDdDMDUzRUROKUUSNDBEMDU1NTk2ITn0",
+    "payload": "eyJkb21haW4iOiJhcHAuZXhvbXBsZS5jb20ifQ",
+    "signature": "MHgxMQoZGU4ZGYuZDWuZTdmMGIXN2YxMTU2NDI1MjRmZTYUMUyZGU4ZGU1MMU0MThiYjU4ZjVmZmQxYjRjNDBiNGVIZTRhNDcwNmVmNjhlMzQ0ZGQ5MDBlYmNlMzVIGY5ZGQ0NzI1NWRmNzMuYzUxNjE40MwVjZDJJY2Y0MDFj"
   },
   "frame": {
     "version": "next",
@@ -11,7 +11,7 @@
       "title": "Play SymbiFlappy",
       "action": {
         "type": "launch_frame",
-        "name": "SymbiFlappy Game",
+        "name": "SymbioticFlappy Game",
         "url": "https://symbiotic-flappy-bird.vercel.app",
         "splashImageUrl": "https://symbiotic-flappy-bird.vercel.app/vite.svg",
         "splashBackgroundColor": "#6366f1"
@@ -24,10 +24,19 @@
     "description": "A fun flappy bird game inspired by symbiotic.fi",
     "iconUrl": "https://symbiotic-flappy-bird.vercel.app/vite.svg",
     "url": "https://symbiotic-flappy-bird.vercel.app",
-    "screenshots": [
+    "splashImageUrl": "https://symbiotic-flappy-bird.vercel.app/vite.svg",
+    "splashBackgroundColor": "#6366f1",
+    "subtitle": "Flappy Bird Game",
+    "screenshotUrl": [
       "https://symbiotic-flappy-bird.vercel.app/screenshot.png"
     ],
-    "category": "games",
-    "permissions": []
+    "primaryCategory": "games",
+    "tags": ["games", "flappy", "bird", "crypto"],
+    "heroImageUrl": "https://symbiotic-flappy-bird.vercel.app/vite.svg",
+    "tagline": "Play and earn",
+    "ogTitle": "SymbioticFlappy - Flappy Bird Game",
+    "ogDescription": "Play our fun flappy bird game inspired by symbiotic.fi",
+    "ogImageUrl": "https://symbiotic-flappy-bird.vercel.app/vite.svg",
+    "noindex": false
   }
 }
