@@ -1,0 +1,12 @@
+{
+  "miniapp": {
+    "version": "1",
+    "name": "Symbiotic-flappy-bird",
+    "iconUrl": "https://symbiotic-flappy-bird.vercel.app/icon.png",
+    "homeUrl": "https://symbiotic-flappy-bird.vercel.app",
+    "splashImageUrl": "https://symbiotic-flappy-bird.vercel.app/splash.png",
+    "splashBackgroundColor": "#2a7e3b",
+    "heroImageUrl": "https://symbiotic-flappy-bird.vercel.app/hero.png",
+    "tagline": "tap tap to fly"
+  }
+}
