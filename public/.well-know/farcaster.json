@@ -1,8 +1,8 @@
 {
   "accountAssociation": {
-    "header": "eyJmaWQiOjkiXTIISnRcGUiOiIjdXkNb2R5IiwiZ2V5IjoxMlVmNzkwRGQ3OTkzQT1ZK4NDdDMDUzRUROKUUSNDBEMDU1NTk2ITn0",
-    "payload": "eyJkb21haW4iOiJhcHAuZXhvbXBsZS5jb20ifQ",
-    "signature": "MHgxMQoZGU4ZGYuZDWuZTdmMGIXN2YxMTU2NDI1MjRmZTYUMUyZGU4ZGU1MMU0MThiYjU4ZjVmZmQxYjRjNDBiNGVIZTRhNDcwNmVmNjhlMzQ0ZGQ5MDBlYmNlMzVIGY5ZGQ0NzI1NWRmNzMuYzUxNjE40MwVjZDJJY2Y0MDFj"
+    "header": "eyJmaWQiOjkxNTIsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHgwMmVmNzkwRGQ3OTkzQTM1ZkQ4NDdDMDUzRURkQUU5NDBEMDU1NTk2In0",
+    "payload": "eyJkb21haW4iOiJhcHAuZXhhbXBsZS5jb20ifQ",
+    "signature": "MHgxMGQwZGU4ZGYwZDUwZTdmMGIxN2YxMTU2NDI1MjRmZTY0MTUyZGU4ZGU1MWU0MThiYjU4ZjVmZmQxYjRjNDBiNGVlZTRhNDcwNmVmNjhlMzQ0ZGQ5MDBkYmQyMmNlMmVlZGY5ZGQ0N2JlNWRmNzMwYzUxNjE4OWVjZDJjY2Y0MDFj"
   },
   "miniapp": {
     "version": "1",
@@ -11,20 +11,20 @@
     "iconUrl": "https://symbiotic-flappy-bird.vercel.app/vite.svg",
     "splashImageUrl": "https://symbiotic-flappy-bird.vercel.app/vite.svg",
     "splashBackgroundColor": "#6366f1",
-    "primaryCategory": "games",
-    "tags": ["games", "flappy", "bird", "crypto"],
-    "noindex": false,
     "subtitle": "Flappy Bird Game",
     "description": "A fun flappy bird game inspired by symbiotic.fi",
-    "tagline": "Play and earn",
-    "heroImageUrl": "https://symbiotic-flappy-bird.vercel.app/vite.svg",
     "screenshotUrls": [
       "https://symbiotic-flappy-bird.vercel.app/vite.svg",
       "https://symbiotic-flappy-bird.vercel.app/vite.svg",
       "https://symbiotic-flappy-bird.vercel.app/vite.svg"
     ],
-    "ogTitle": "SymbioticFlappy",
-    "ogDescription": "Flappy bird game on Base",
-    "ogImageUrl": "https://symbiotic-flappy-bird.vercel.app/vite.svg"
+    "primaryCategory": "games",
+    "tags": ["games", "flappy", "bird", "crypto"],
+    "heroImageUrl": "https://symbiotic-flappy-bird.vercel.app/vite.svg",
+    "tagline": "Play and earn",
+    "ogTitle": "SymbioticFlappy Game",
+    "ogDescription": "Play flappy bird on Base",
+    "ogImageUrl": "https://symbiotic-flappy-bird.vercel.app/vite.svg",
+    "noindex": false
   }
 }
