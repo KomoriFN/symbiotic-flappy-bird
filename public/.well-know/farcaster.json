@@ -1,0 +1,33 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "next",
+    "imageUrl": "",
+    "button": {
+      "title": "Play SymbiFlappy",
+      "action": {
+        "type": "launch_frame",
+        "name": "SymbiFlappy Game",
+        "url": "https://symbiotic-flappy-bird.vercel.app",
+        "splashImageUrl": "https://symbiotic-flappy-bird.vercel.app/vite.svg",
+        "splashBackgroundColor": "#6366f1"
+      }
+    }
+  },
+  "miniapp": {
+    "version": "1",
+    "name": "SymbioticFlappy",
+    "description": "A fun flappy bird game inspired by symbiotic.fi",
+    "iconUrl": "https://symbiotic-flappy-bird.vercel.app/vite.svg",
+    "url": "https://symbiotic-flappy-bird.vercel.app",
+    "screenshots": [
+      "https://symbiotic-flappy-bird.vercel.app/screenshot.png"
+    ],
+    "category": "games",
+    "permissions": []
+  }
+}
